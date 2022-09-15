@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Page30 - Matrícula de Tributos</title>
+<link rel="shortcut icon" href="../../image/sheld.ico"  type="image/x-icon" />
+<link rel="Bookmark" href="../../image/sheld.ico" />
+
+    <!-- Bootstrap core CSS -->
+<link href="../../style/bootstrap.min.css" rel="stylesheet">
+<link href="../../style/maincss.css" rel="stylesheet">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');</style>
+
+    <!-- Custom styles for this template -->
+
+<style>
+
+#all{
+	margin: 0 auto;
+	width: 1280px;
+	height: 900px;   <!-- hight -->
+}
+#small{margin-bottom:30px;
+	width: 960px;
+	height: 900px;        <!-- hight -->
+	position: relative;
+	float: left;
+	margin-left:-160px;margin-right:-160px;
+}
+#shadow{
+	width: 160px;
+	height: 160px;
+	background-color: black;
+	opacity: .2;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	cursor: move;
+	margin-top:120px;
+}
+#cover{
+	width:640px;
+	height:900px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	cursor: move;	
+	margin-top:120px;
+}
+#big{background-color: #222222;
+	width: 640px;
+	height: 640px; 
+	left: 0px!important;
+	position: relative;
+	z-index:1;
+	overflow: hidden;
+	display: none;border:1px solid #d49e3b;
+	
+}
+#big img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+</style>  
+
+ <script>
+window.onload=function(){
+	small=document.getElementById("small");
+	shadow=document.getElementById("shadow");
+	shadowWH=shadow.style.width?shadow.style.width:document.defaultView.getComputedStyle(shadow,null).width;
+	shadowWH=parseInt(shadowWH);
+	smallW=small.style.width?small.style.width:document.defaultView.getComputedStyle(small,null).width;
+	smallW=parseInt(smallW);
+	smallMT=small.style.marginTop?small.style.marginTop:document.defaultView.getComputedStyle(small,null).marginTop;
+	smallMT=parseInt(smallMT);
+	big=document.getElementById("big");
+	bigW=big.style.width?big.style.width:document.defaultView.getComputedStyle(big,null).width;
+	bigW=parseInt(bigW);
+	bigImg=big.getElementsByTagName("img")[0];
+	move();
+}
+function move(){
+	small.onmouseover=function(){
+		shadow.style.display="block";
+		big.style.display="block";
+		change(event);
+	}
+	small.onmouseout=function(){
+		shadow.style.display="none";
+		big.style.display="none";
+	}
+	small.onmousemove=function(){
+		change(event);
+	}
+}
+function change(event){
+	var evt=event?event:window.event;
+	var moveL=evt.layerX-shadowWH/2;
+	var moveT=evt.layerY-shadowWH/2;
+	
+	
+	if(moveL<0){
+		moveL=0;
+	}
+	if(moveL>smallW-shadowWH){
+		moveL=smallW-shadowWH;
+	}
+	
+	if(moveT<0){
+		moveT=0;
+	}
+	if(moveT>smallW-shadowWH){
+		moveT=smallW-shadowWH;
+	}
+	
+	shadow.style.left=moveL+"px";
+	shadow.style.top=moveT+"px";
+	/**
+	 * 图片放大
+	 */
+	big.style.left=50+"px";
+	big.style.top=smallMT+"px";
+	bigImgW=bigImg.offsetWidth;
+	var scale=bigImgW/bigW;
+	bigImg.style.top=-moveT*scale+"px";
+	bigImg.style.left=-moveL*scale+"px";
+}
+
+</script>  
+   
+   
+<script>
+	$(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+   
+   
+   
+   
+</head>
+
+
+
+<body class="d-flex h-100 text-center text-white bg-dark background1">
+  
+  
+<div class="cover-container d-flex w-100 h-100  mx-auto flex-column" >
+
+ <header class="mb-auto p-3 title1" >
+    <div >
+      <nav class="nav nav-masthead justify-content-center float-md-end" >
+        <a class="nav-link" href="../../">HOME</a>
+        <a class="nav-link" href="../codex.html">CODEX</a>
+        <a class="nav-link" href="../map.html">MAP</a>
+		<a class="nav-link" href="../data.html" >DATA</a>
+	    <a class="nav-link" href="../about.html">ABOUT</a>
+      </nav>
+    </div>
+
+</header> 
+
+
+<div align="center">
+<div style="width:1280px;" align="left">
+<div style="width:1280px;position: absolute;" align="left">
+
+<div style="width:1280px;height:120px;position: relative;">
+<div align="center">
+<h3>PAGE 30 , FOLIO 15V</h3>
+<h1>Tribute of Tochpan</h1>
+</div>
+<div align="center" style="margin-top:-45px;margin-bottom:90px;">
+<a href="codex29.html" style="float:left;"><button type="button" class="btn btn-primary btn-lg">◀ PREV</button></a>
+<a href="codex31.html" style="float:right;"><button type="button" class="btn btn-primary btn-lg">NEXT ▶</button></a>
+</div></div>
+
+
+<div align="center">
+<div class="codex1">
+
+
+<div id="all">
+			<div id="small">
+				<img src="../../image/codex/030.jpg" width="640"/>
+				<div id="shadow"></div>
+				<div id="cover"></div>	
+			</div>
+			<div id="big">
+				<img src="../../image/codex/030.jpg"/>
+			</div>
+			
+</div>
+
+</div>
+
+
+<div class="codex1">
+
+
+
+
+
+<div class="nounderlines" style="width: 640px;height:900px; float: none; border: none; clear: none;  position: relative;background:url(../../image/codex/a030.png); background-repeat: no-repeat;">
+
+
+<div ><div data-toggle="tooltip" title="twenty pages of duck feathers" class="rennd" style="position: absolute; left:133px; top:53px; color:">cente cpanxiquipilli x[anto yc]hcatl</div></div>
+<div ><div data-toggle="tooltip" title="800 bundles of chile" class="rennd" style="position: absolute; left:369px; top:33px; color:">ontzontlamamalli chilli</div></div>
+<div ><div data-toggle="tooltip" title="800 loads of chiles or spice" class="rennd" style="position: absolute; left:369px; top:50px; color:">800 Cargas de chiles o Picante</div></div>
+<div ><div data-toggle="tooltip" title="two costumes per year" class="rennd" style="position: absolute; left:123px; top:340px; color:">xiuitl ontetl itlauiz</div></div>
+<div ><div data-toggle="tooltip" title="ornaments or insignias" class="rennd" style="position: absolute; left:123px; top:360px; color:">adornos o insignias</div></div>
+<div ><div data-toggle="tooltip" title="two necklaces of precious greenstone" class="rennd" style="position: absolute; left:344px; top:311px; color:">ontozcatl tlazochalchiuitl</div></div>
+<div ><div data-toggle="tooltip" title="two necklaces of precious stones" class="rennd" style="position: absolute; left:344px; top:331px; color:">dos collares de piedras preciosas</div></div>
+<div ><div data-toggle="tooltip" title="a string of fine stones" class="rennd" style="position: absolute; left:363px; top:362px; color:">una sarta de Piedras finas</div></div>
+<div ><div data-toggle="tooltip" title="a necklace of turquoise" class="rennd" style="position: absolute; left:363px; top:376px; color:">centozcatl xiuitl </div></div>
+<div ><div data-toggle="tooltip" title="two of blue stone" class="rennd" style="position: absolute; left:397px; top:406px; color:">ontetl xiuhtetl</div></div>
+<div ><div data-toggle="tooltip" title="turquoise and fine stones" class="rennd" style="position: absolute; left:397px; top:420px; color:">Turquesas y piedras finas</div></div>
+<div ><div data-toggle="tooltip" title="400 with red stripes, 2 brazas wide" class="rennd" style="position: absolute; left:92px; top:477px; color:">centzontli omatl tlatlapalli</div></div>
+<div ><div data-toggle="tooltip" title="1200 8 brazas wide" class="rennd" style="position: absolute; left:350px; top:470px; color:">yetzontli<br>chichicuetic</div></div>
+<div ><div data-toggle="tooltip" title="100 huipils" class="rennd" style="position: absolute; left:448px; top:470px; color:">centzontli huipilli</div></div>
+<div ><div data-toggle="tooltip" title="capes" class="rennd" style="position: absolute; left:448px; top:490px; color:">Mantas </div></div>
+<div ><div data-toggle="tooltip" title="400 with the wind-jewel [design]" class="rennd" style="position: absolute; left:130px; top:570px; color:">centzontli yecacozcayo</div></div>
+<div ><div data-toggle="tooltip" title="400 loincloths" class="rennd" style="position: absolute; left:250px; top:585px; color:">centzonmaxtlatl </div></div>
+<div ><div data-toggle="tooltip" title="loincloths" class="rennd" style="position: absolute; left:250px; top:600px; color:">bragas  </div></div>
+<div ><div data-toggle="tooltip" title="800 4 brazas wide" class="rennd" style="position: absolute; left:358px; top:577px; color:">onztontli nanan[matl]</div></div>
+<div ><div data-toggle="tooltip" title="worked and fine" class="rennd" style="position: absolute; left:116px; top:680px; color:">labradas y finas </div></div>
+<div ><div data-toggle="tooltip" title="12 wrappings of precious capes was the tribute which Tochpan deposited every 80 days" class="rennd" style="position: absolute; left:342px; top:696px; color:">matlac quimilli omome yn tlazotilmatli y [...] tlacallaquil nappoual[tica yn to]chpanecatl</div></div>
+<div ><div data-toggle="tooltip" title="...days..." class="rennd" style="position: absolute; left:342px; top:740px; color:">...días...</div></div>
+<div ><div data-toggle="tooltip" title="tochpan" class="rennd" style="position: absolute; left:35px; top:792px; color:">tochpan</div></div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="card">
+<h2>Altepetls:</h2>
+
+
+<div class="row" align="center">
+<div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Rabbit                                       "><img src="../../image/glyph/tochpan.png" width="70"><p>Tochpan           </p><div> Tuchpa<br>Tuchpan                                                          </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Land of Chalk                                "><img src="../../image/glyph/tlaltitzapan.png" width="70"><p>Tlaltitzapan      </p><div> Tlaltiçapan<br>Tlatizapa<br>Tlatizapan<br>Tlatiçapan                             </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Temple of the Women                          "><img src="../../image/glyph/cihuanteopan.png" width="70"><p>Cihuanteopan      </p><div> Çihuanteopan<br>Çihuateopa<br>Cihuateopan<br>Çhihuanteopa                        </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Banners                                    "><img src="../../image/glyph/papantla.png" width="70"><p>Papantla          </p><div> Papantlan                                                               </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Hill of the Jaguar                           "><img src="../../image/glyph/ocelotepec.png" width="70"><p>Ocelotepec        </p><div> Oçelotepec                                                              </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Canal of the Maize Flower                    "><img src="../../image/glyph/miauaapan.png" width="70"><p>Miauaapan         </p><div> Miahuaapan<br>Mihuaapa<br>Miahuapan                                           </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of the Dead                                   "><img src="../../image/glyph/mictlan1.png" width="70"><p>Mictlan           </p><div>                                                                         </div></div></div>
+</div>
+
+</div>
+
+
+<div class="card">
+<h2>Tributos List:</h2>
+
+
+<div><h4 style="color:#d49e3b;">Every 6 months：</h4>
+<p style="padding-left:25px;">400 black cross-striped mantas                            </p>
+<p style="padding-left:25px;">400 red mantas of a shell design                          </p>
+<p style="padding-left:25px;">400 multicolored loincloths                               </p>
+<p style="padding-left:25px;">800 large white mantas, each four brazas long             </p>
+<p style="padding-left:25px;">800 orange-striped mantas, each eight brazas long         </p>
+<p style="padding-left:25px;">400 multicolored striped mantas, each two brazas long     </p>
+<p style="padding-left:25px;">400 women’s tunics and skirts                             </p>
+<p style="padding-left:25px;">240 red-bordered mantas of various shell designs.         </p>
+</div>
+
+
+<div><h4 style="color:#d49e3b;">Annually:</h4>
+<p style="padding-left:25px;">800 loads of dried chiles                                                  </p>
+<p style="padding-left:25px;">1 yellow quaxolotl warrior costume and shield                              </p>
+<p style="padding-left:25px;">1 yellow warrior costume and quetzalpatzactli back device, and shield      </p>
+<p style="padding-left:25px;">20 bags of small white feathers (down)                                     </p>
+<p style="padding-left:25px;">2 strings of greenstone beads                                              </p>
+<p style="padding-left:25px;">1 string of turquoise stones                                               </p>
+<p style="padding-left:25px;">2 round mosaics of small turquoise stones                                  </p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div  style="margin-top:50px;" align="center" >
+<a href="codex01.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">01</div></div></a>
+<a href="codex02.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">02</div></div></a>
+<a href="codex03.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">03</div></div></a>
+<a href="codex04.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">04</div></div></a>
+<a href="codex05.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">05</div></div></a>
+<a href="codex06.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">06</div></div></a>
+<a href="codex07.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">07</div></div></a>
+<a href="codex08.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">08</div></div></a>
+<a href="codex09.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">09</div></div></a>
+<a href="codex10.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">10</div></div></a>
+<a href="codex11.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">11</div></div></a>
+<a href="codex12.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">12</div></div></a>
+<a href="codex13.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">13</div></div></a>
+<a href="codex14.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">14</div></div></a>
+<a href="codex15.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">15</div></div></a>
+<a href="codex16.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">16</div></div></a>
+<a href="codex17.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">17</div></div></a>
+<a href="codex18.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">18</div></div></a>
+<a href="codex19.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">19</div></div></a>
+<a href="codex20.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">20</div></div></a>
+<a href="codex21.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">21</div></div></a>
+<a href="codex22.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">22</div></div></a>
+<a href="codex23.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">23</div></div></a>
+<a href="codex24.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">24</div></div></a>
+<a href="codex25.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">25</div></div></a>
+<a href="codex26.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">26</div></div></a>
+<a href="codex27.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">27</div></div></a>
+<a href="codex28.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">28</div></div></a>
+<a href="codex29.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">29</div></div></a>
+<a href="codex30.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div style="color:#d49e3b" class="step3">30</div></div></a>
+<a href="codex31.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">31</div></div></a>
+<a href="codex32.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">32</div></div></a>
+<div style="clear:both;"></div>
+</div>
+
+
+
+<footer  class="footer1">
+
+</footer >
+
+
+</div></div></div>
+
+
+
+</div>
+
+
+
+
+
+ 
+  
+  
+  
+  
+  
+
+    
+
+
+
+    
+  </body>
+</html>
