@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Page22 - Matrícula de Tributos</title>
+<link rel="shortcut icon" href="../../image/sheld.ico"  type="image/x-icon" />
+<link rel="Bookmark" href="../../image/sheld.ico" />
+
+    <!-- Bootstrap core CSS -->
+<link href="../../style/bootstrap.min.css" rel="stylesheet">
+<link href="../../style/maincss.css" rel="stylesheet">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');</style>
+
+    <!-- Custom styles for this template -->
+
+<style>
+
+#all{
+	margin: 0 auto;
+	width: 1280px;
+	height: 928px;   <!-- hight -->
+}
+#small{margin-bottom:30px;
+	width: 960px;
+	height: 928px;        <!-- hight -->
+	position: relative;
+	float: left;
+	margin-left:-160px;margin-right:-160px;
+}
+#shadow{
+	width: 160px;
+	height: 160px;
+	background-color: black;
+	opacity: .2;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	cursor: move;
+	margin-top:120px;
+}
+#cover{
+	width:640px;
+	height:928px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	cursor: move;	
+	margin-top:120px;
+}
+#big{background-color: #222222;
+	width: 640px;
+	height: 640px; 
+	left: 0px!important;
+	position: relative;
+	z-index:1;
+	overflow: hidden;
+	display: none;border:1px solid #d49e3b;
+	
+}
+#big img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+</style>  
+
+ <script>
+window.onload=function(){
+	small=document.getElementById("small");
+	shadow=document.getElementById("shadow");
+	shadowWH=shadow.style.width?shadow.style.width:document.defaultView.getComputedStyle(shadow,null).width;
+	shadowWH=parseInt(shadowWH);
+	smallW=small.style.width?small.style.width:document.defaultView.getComputedStyle(small,null).width;
+	smallW=parseInt(smallW);
+	smallMT=small.style.marginTop?small.style.marginTop:document.defaultView.getComputedStyle(small,null).marginTop;
+	smallMT=parseInt(smallMT);
+	big=document.getElementById("big");
+	bigW=big.style.width?big.style.width:document.defaultView.getComputedStyle(big,null).width;
+	bigW=parseInt(bigW);
+	bigImg=big.getElementsByTagName("img")[0];
+	move();
+}
+function move(){
+	small.onmouseover=function(){
+		shadow.style.display="block";
+		big.style.display="block";
+		change(event);
+	}
+	small.onmouseout=function(){
+		shadow.style.display="none";
+		big.style.display="none";
+	}
+	small.onmousemove=function(){
+		change(event);
+	}
+}
+function change(event){
+	var evt=event?event:window.event;
+	var moveL=evt.layerX-shadowWH/2;
+	var moveT=evt.layerY-shadowWH/2;
+	
+	
+	if(moveL<0){
+		moveL=0;
+	}
+	if(moveL>smallW-shadowWH){
+		moveL=smallW-shadowWH;
+	}
+	
+	if(moveT<0){
+		moveT=0;
+	}
+	if(moveT>smallW-shadowWH){
+		moveT=smallW-shadowWH;
+	}
+	
+	shadow.style.left=moveL+"px";
+	shadow.style.top=moveT+"px";
+	/**
+	 * 图片放大
+	 */
+	big.style.left=50+"px";
+	big.style.top=smallMT+"px";
+	bigImgW=bigImg.offsetWidth;
+	var scale=bigImgW/bigW;
+	bigImg.style.top=-moveT*scale+"px";
+	bigImg.style.left=-moveL*scale+"px";
+}
+
+</script>  
+   
+   
+<script>
+	$(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+   
+   
+   
+   
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4694110216243855" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body class="d-flex h-100 text-center text-white bg-dark background1">
+  
+  
+<div class="cover-container d-flex w-100 h-100  mx-auto flex-column" >
+
+ <header class="mb-auto p-3 title1" >
+    <div >
+      <nav class="nav nav-masthead justify-content-center float-md-end" >
+        <a class="nav-link" href="../../">主页</a>
+        <a class="nav-link" href="../codex.html">手抄本</a>
+        <a class="nav-link" href="../map.html">地图</a>
+		<a class="nav-link" href="../data.html" >资料</a>
+	    <a class="nav-link" href="../about.html">关于</a>
+      </nav>
+    </div>
+
+</header> 
+
+
+<div align="center">
+<div style="width:1280px;" align="left">
+<div style="width:1280px;position: absolute;" align="left">
+
+<div style="width:1280px;height:120px;position: relative;">
+<div align="center">
+<h3>PAGE 22 , FOLIO 11V</h3>
+<h1>Tribute of Tepeyacac</h1>
+</div>
+<div align="center" style="margin-top:-45px;margin-bottom:90px;">
+<a href="codex21.html" style="float:left;"><button type="button" class="btn btn-primary btn-lg">◀ 上一页</button></a>
+<a href="codex23.html" style="float:right;"><button type="button" class="btn btn-primary btn-lg">下一页 ▶</button></a>
+</div></div>
+
+
+<div align="center">
+<div class="codex1">
+
+
+<div id="all">
+			<div id="small">
+				<img src="../../image/codex/022.jpg" width="640"/>
+				<div id="shadow"></div>
+				<div id="cover"></div>	
+			</div>
+			<div id="big">
+				<img src="../../image/codex/022.jpg"/>
+			</div>
+			
+</div>
+
+</div>
+
+
+<div class="codex1">
+
+
+
+
+
+<div class="nounderlines" style="width: 640px;height:928px; float: none; border: none; clear: none;  position: relative;background:url(../../image/codex/a022.png); background-repeat: no-repeat;">
+
+
+<div ><div data-toggle="tooltip" title="8000 cut [reeds]" class="rennd" style="position: absolute; left:10px; top:145px; color:">cenxiquipilli tlatzontecatl</div></div>
+<div ><div data-toggle="tooltip" title="a bag of small stones" class="rennd" style="position: absolute; left:10px; top:165px; color:">una talega de piedras pequeñas</div></div>
+<div ><div data-toggle="tooltip" title="4000 loads of reeds" class="rennd" style="position: absolute; left:118px; top:224px; color:">matlactzontlamamalli otlatl</div></div>
+<div ><div data-toggle="tooltip" title="10 bundles of reeds" class="rennd" style="position: absolute; left:118px; top:244px; color:">diez cargas de otates</div></div>
+<div ><div data-toggle="tooltip" title="8000 pipes or cigars" class="rennd" style="position: absolute; left:206px; top:267px; color:">cenxiquipilli acayetl</div></div>
+<div ><div data-toggle="tooltip" title="1000 bundles of aromatic reeds" class="rennd" style="position: absolute; left:180px; top:287px; color:">mil canutos de cañas aromáticas</div></div>
+<div ><div data-toggle="tooltip" title="200 carrying racks" class="rennd" style="position: absolute; left:200px; top:400px; color:">matlactecpantli cacaxtli </div></div>
+<div ><div data-toggle="tooltip" title="10 loads of carrying racks for carrying" class="rennd" style="position: absolute; left:230px; top:420px; color:">diez Cargas de<br>Cacastlis para cargar</div></div>
+<div ><div data-toggle="tooltip" title="800 deerskins" class="rennd" style="position: absolute; left:35px; top:460px; color:">ontzontli mazayeuatl </div></div>
+<div ><div data-toggle="tooltip" title="4000 [loads] of limestone" class="rennd" style="position: absolute; left:366px; top:378px; color:">matlactzontli tenextli</div></div>
+<div ><div data-toggle="tooltip" title="4000 loads of limestone" class="rennd" style="position: absolute; left:366px; top:398px; color:">4000 Cargas de Cal</div></div>
+<div ><div data-toggle="tooltip" title="they gave war tribute. They turned over the prisoners they captured: from Tlaxcal, Cholula, and Huexotzingo; with this they served Moteuczoma" class="rennd" style="position: absolute; left:160px; top:595px; color:">oyaotequitia quinhualcauaya in malhuan<br>in quexquich quimanaya in tlaxcalteca<br>in cholultecatl in huexotzincatl yn<br>ica quitlayecoltiaya yn Moteuczoma</div></div>
+<div ><div data-toggle="tooltip" title="This was the service by which they gave to the Emperor Motezuma Tlaxcaltecos, or people from Tlaxcala, people from Cholula, and Huejotzingo" class="rennd" style="position: absolute; left:160px; top:695px; color:">esto era el servicio que reconocian al<br>Emperador Motezuma los Tlaxcaltecos,<br>o de Tlascala, los de Cholula,<br>y Huejozingo</div></div>
+<div ><div data-toggle="tooltip" title="tepeyacac" class="rennd" style="position: absolute; left:30px; top:809px; color:">tepeyacac</div></div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+<h2>Altepetls:</h2>
+
+
+<div class="row" align="center">
+<div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Beginning of the Hill                        "><img src="../../image/glyph/tlayacac.png" width="70"><p>Tepeyacac         </p><div> Tepeacac                                                                </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Water of the Feather                         "><img src="../../image/glyph/quechulac.png" width="70"><p>Quechulac         </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Stone Jaw                                    "><img src="../../image/glyph/tecamachalco.png" width="70"><p>Tecamachalco      </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="In the Small Reeds                                  "><img src="../../image/glyph/acatzinco.png" width="70"><p>Acatzinco         </p><div> Acazinco                                                                </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Noble's House                                "><img src="../../image/glyph/tecalco.png" width="70"><p>Tecalco           </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Yucca Field                                  "><img src="../../image/glyph/iczochinanco.png" width="70"><p>Iczochinanco      </p><div> Ycçochinanco<br>Yczochinanco                                               </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="House of Eagles                                     "><img src="../../image/glyph/quauhtinchan.png" width="70"><p>Quauhtinchan      </p><div> Cuauhtinchan                                                            </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Chia                                       "><img src="../../image/glyph/chietlan.png" width="70"><p>Chietlan          </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Red Heads                                  "><img src="../../image/glyph/quatlatlauhcan.png" width="70"><p>Quatlatlauhcan    </p><div> Quatlatlauhca<br>Cuatlatlauhc<br>Quatlatlauh                                  </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Crag                                         "><img src="../../image/glyph/tepexic.png" width="70"><p>Tepexic           </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Obsidian                                   "><img src="../../image/glyph/itzucan.png" width="70"><p>Itzucan           </p><div> Ytzucan<br>Itzocan                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Where There Are Many Feather-Tufted Eagles          "><img src="../../image/glyph/quauhquechulan.png" width="70"><p>Quauhquechulan    </p><div> Cuauhquecholan<br>Quauhquecholan                                           </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Among the Sacred Prickly Pear Cactus Fruits         "><img src="../../image/glyph/teonochtitlan.png" width="70"><p>Teonochtitlan     </p><div> Teonochtitla                                                            </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Temples                                    "><img src="../../image/glyph/teopantlan.png" width="70"><p>Teopantlan        </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Old Men                                    "><img src="../../image/glyph/xolochiuhyan.png" width="70"><p>Huehuetlan        </p><div> Huehuetla                                                               </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On a Stone Wall                                     "><img src="../../image/glyph/tetenanco.png" width="70"><p>Tetenanco         </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Small Snake                                  "><img src="../../image/glyph/coatzinco.png" width="70"><p>Coatzinco         </p><div> Coazinco                                                                </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Skunks                                     "><img src="../../image/glyph/epatlan.png" width="70"><p>Epatlan           </p><div> Epatla                                                                  </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Earplugs                                   "><img src="../../image/glyph/nacochtlan.png" width="70"><p>Nacochtlan        </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place of Small Red Peppers                          "><img src="../../image/glyph/chiltecpintlan.png" width="70"><p>Chiltecpintlan    </p><div> Chiltecpintla<br>Chiltepintla                                              </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="On the Platform of the Cave                         "><img src="../../image/glyph/oztotlapechco.png" width="70"><p>Oztotlapechco     </p><div> Oztotlapecho                                                            </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="Place That Has a Pool of Water                      "><img src="../../image/glyph/atezcahuacan.png" width="70"><p>Atezcahuacan      </p><div> Atezcahuaca<br>Atezcahucan                                                 </div></div></div>
+</div>
+
+</div>
+
+
+<div class="card">
+<h2>Tributos List:</h2>
+<div><h4 style="color:#d49e3b;">Undetermined Intervals: </h4>
+<p style="padding-left:25px;">War captives from Tlaxcala, Cholula, and Huexotzinco </p>
+</div>
+
+<div><h4 style="color:#d49e3b;">Every 80 days:</h4>
+<p style="padding-left:25px;">4,000 loads of lime                             </p>
+<p style="padding-left:25px;">800 deerskins                                   </p>
+<p style="padding-left:25px;">4,000 loads of canes, called otlatl             </p>
+<p style="padding-left:25px;">8,000 loads of canes for making arrows          </p>
+<p style="padding-left:25px;">8,000 loads of perfumes, called acayetl         </p>
+<p style="padding-left:25px;">200 carrying frames, called cacaxtles           </p>
+
+</div>
+
+
+
+<div><h4 style="color:#d49e3b;">Annually: </h4>
+<p style="padding-left:25px;">2 bins of maize  </p>
+<p style="padding-left:25px;">2 bins of beans </p>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div  style="margin-top:50px;" align="center" >
+<a href="codex01.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">01</div></div></a>
+<a href="codex02.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">02</div></div></a>
+<a href="codex03.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">03</div></div></a>
+<a href="codex04.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">04</div></div></a>
+<a href="codex05.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">05</div></div></a>
+<a href="codex06.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">06</div></div></a>
+<a href="codex07.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">07</div></div></a>
+<a href="codex08.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">08</div></div></a>
+<a href="codex09.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">09</div></div></a>
+<a href="codex10.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">10</div></div></a>
+<a href="codex11.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">11</div></div></a>
+<a href="codex12.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">12</div></div></a>
+<a href="codex13.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">13</div></div></a>
+<a href="codex14.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">14</div></div></a>
+<a href="codex15.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">15</div></div></a>
+<a href="codex16.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">16</div></div></a>
+<a href="codex17.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">17</div></div></a>
+<a href="codex18.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">18</div></div></a>
+<a href="codex19.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">19</div></div></a>
+<a href="codex20.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">20</div></div></a>
+<a href="codex21.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">21</div></div></a>
+<a href="codex22.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div style="color:#d49e3b" class="step3">22</div></div></a>
+<a href="codex23.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">23</div></div></a>
+<a href="codex24.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">24</div></div></a>
+<a href="codex25.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">25</div></div></a>
+<a href="codex26.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">26</div></div></a>
+<a href="codex27.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">27</div></div></a>
+<a href="codex28.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">28</div></div></a>
+<a href="codex29.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">29</div></div></a>
+<a href="codex30.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">30</div></div></a>
+<a href="codex31.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">31</div></div></a>
+<a href="codex32.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">32</div></div></a>
+<div style="clear:both;"></div>
+</div>
+
+
+
+<footer  class="footer1">
+
+</footer >
+
+
+</div></div></div>
+
+
+
+</div>
+
+
+
+
+
+ 
+  
+  
+  
+  
+  
+
+    
+
+
+
+    
+  </body>
+</html>

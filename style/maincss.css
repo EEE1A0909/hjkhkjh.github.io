@@ -111,7 +111,7 @@ float:left;width:640px;z-index:-1; color:#9c3300;font-size:0.9rem;
 .contents2{float:left;width:55px;}
 .contents3{float:left;width:192px;color: #f2f2f2;padding:13px 0 0 8px;}
 .contents4{float:left;width:190px;color: #f2f2f2;padding-left:8px;}
-.contents5{float:left;width:85px;vertical-align: middle;border-left:1px solid #404040;color: #ab7f30;padding-left:7px;display:flex;align-items:center;padding-top:5px;}
+.contents5{float:left;width:95px;vertical-align: middle;border-left:1px solid #404040;color: #ab7f30;padding-left:7px;display:flex;align-items:center;padding-top:5px;}
 
 .contents6{height:110px;width:350px!important;background-color:#353535;border-radius:5px;padding:4px;vertical-align: middle;margin-top:8px;}
 .contents6:hover{background-color:#5e5e5e;border-radius: 5px;}
@@ -152,3 +152,22 @@ display:initial;/*当鼠标hover时展示*/
 
 
 
+html::-webkit-scrollbar {
+    width: 6px;
+  }
+html::-webkit-scrollbar-track {
+    background: rgb(179, 177, 177,0.3);
+    border-radius: 6px;
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136,0.3);
+    border-radius: 6px;
+  }
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100,0.3);
+    border-radius: 6px;
+  }
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(68, 68, 68,0.3);
+    border-radius: 6px;
+  }
