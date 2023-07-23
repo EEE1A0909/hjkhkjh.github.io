@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <title>Page03 - Matrícula de Tributos</title>
+    <title>第 26 页 - 《贡品清单》  Matrícula de Tributos</title>
 <link rel="shortcut icon" href="../../image/sheld.ico"  type="image/x-icon" />
 <link rel="Bookmark" href="../../image/sheld.ico" />
 
@@ -21,13 +21,14 @@
 #all{
 	margin: 0 auto;
 	width: 1280px;
-	height: 425px;   <!-- hight -->
+	height: 935px;   <!-- hight -->
 }
 #small{margin-bottom:30px;
-	width: 640px;
-	height: 425px;        <!-- hight -->
+	width: 960px;
+	height: 935px;        <!-- hight -->
 	position: relative;
 	float: left;
+	margin-left:-160px;margin-right:-160px;
 }
 #shadow{
 	width: 160px;
@@ -43,29 +44,28 @@
 }
 #cover{
 	width:640px;
-	height:425px;
+	height:935px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	cursor: move;	margin-top:120px;
+	cursor: move;	
+	margin-top:120px;
 }
 #big{background-color: #222222;
 	width: 640px;
-	height: 500px; 
+	height: 640px; 
 	left: 0px!important;
 	position: relative;
 	z-index:1;
 	overflow: hidden;
 	display: none;border:1px solid #d49e3b;
+	
 }
 #big img{
 	position: absolute;
 	top: 0px;
 	left: 0px;
 }
-
-
-
 
 </style>  
 
@@ -77,19 +77,11 @@ window.onload=function(){
 	shadowWH=parseInt(shadowWH);
 	smallW=small.style.width?small.style.width:document.defaultView.getComputedStyle(small,null).width;
 	smallW=parseInt(smallW);
-//	smallML=small.style.marginLeft?small.style.marginLeft:document.defaultView.getComputedStyle(small,null).marginLeft;
-//	smallML=parseInt(smallML);
-	
 	smallMT=small.style.marginTop?small.style.marginTop:document.defaultView.getComputedStyle(small,null).marginTop;
 	smallMT=parseInt(smallMT);
 	big=document.getElementById("big");
 	bigW=big.style.width?big.style.width:document.defaultView.getComputedStyle(big,null).width;
 	bigW=parseInt(bigW);
-//	console.log(smallW);
-//	console.log(shadowWH)
-//console.log("smallML="+smallML);
-//console.log("smallMT="+smallMT);
-//console.log("bigw="+bigW);
 	bigImg=big.getElementsByTagName("img")[0];
 	move();
 }
@@ -109,12 +101,9 @@ function move(){
 }
 function change(event){
 	var evt=event?event:window.event;
-//	var moveL=evt.pageX;
-//	var moveT=evt.pageY;
 	var moveL=evt.layerX-shadowWH/2;
 	var moveT=evt.layerY-shadowWH/2;
 	
-//	console.log("moveL="+moveL+":  moveT="+moveT);
 	
 	if(moveL<0){
 		moveL=0;
@@ -135,11 +124,9 @@ function change(event){
 	/**
 	 * 图片放大
 	 */
-//	big.style.left=smallW+smallML+50+"px";
 	big.style.left=50+"px";
 	big.style.top=smallMT+"px";
 	bigImgW=bigImg.offsetWidth;
-//	console.log("bigImgW="+bigImgW);
 	var scale=bigImgW/bigW;
 	bigImg.style.top=-moveT*scale+"px";
 	bigImg.style.left=-moveL*scale+"px";
@@ -168,11 +155,11 @@ function change(event){
  <header class="mb-auto p-3 title1" >
     <div >
       <nav class="nav nav-masthead justify-content-center float-md-end" >
-        <a class="nav-link" href="../../">HOME</a>
-        <a class="nav-link" href="../codex.html">CODEX</a>
-        <a class="nav-link" href="../map.html">MAP</a>
-		<a class="nav-link" href="../data.html" >DATA</a>
-	    <a class="nav-link" href="../about.html">ABOUT</a>
+        <a class="nav-link" href="../../">主页</a>
+        <a class="nav-link" href="../codex.html">手抄本</a>
+        <a class="nav-link" href="../map.html">地图</a>
+		<a class="nav-link" href="../data.html" >资料</a>
+	    <a class="nav-link" href="../about.html">关于</a>
       </nav>
     </div>
 
@@ -185,12 +172,12 @@ function change(event){
 
 <div style="width:1280px;height:120px;position: relative;">
 <div align="center">
-<h3>PAGE 03 , FOLIO 2R</h3>
-<h1>Tribute of Tlatelolco</h1>
+<h3>第 26  页 , 第 13 张反面</h3>
+<h1>夸乌托彻科省的贡品</h1>
 </div>
 <div align="center" style="margin-top:-45px;margin-bottom:90px;">
-<a href="codex02.html" style="float:left;"><button type="button" class="btn btn-primary btn-lg">◀ PREV</button></a>
-<a href="codex04.html" style="float:right;"><button type="button" class="btn btn-primary btn-lg">NEXT ▶</button></a>
+<a href="codex25.html" style="float:left;"><button type="button" class="btn btn-primary btn-lg">◀ 上一页</button></a>
+<a href="codex27.html" style="float:right;"><button type="button" class="btn btn-primary btn-lg">下一页 ▶</button></a>
 </div></div>
 
 
@@ -200,12 +187,12 @@ function change(event){
 
 <div id="all">
 			<div id="small">
-				<img src="../../image/codex/003.jpg" width="640"/>
+				<img src="../../image/codex/026.jpg" width="640"/>
 				<div id="shadow"></div>
 				<div id="cover"></div>	
 			</div>
 			<div id="big">
-				<img src="../../image/codex/003.jpg"/>
+				<img src="../../image/codex/026.jpg"/>
 			</div>
 			
 </div>
@@ -219,19 +206,24 @@ function change(event){
 
 
 
-<div class="nounderlines" style="width: 640px;height:500px; float: none; border: none; clear: none;  position: relative;background:url(../../image/codex/a003.png);background-repeat: no-repeat;align:left; " align="left">
+<div class="nounderlines" style="width: 640px;height:935px; float: none; border: none; clear: none;  position: relative;background:url(../../image/codex/a026.png); background-repeat: no-repeat;">
 
 
-<div ><div data-toggle="tooltip" title="Tenochtitlan" class="rennd" style="position: absolute; left:65px; top: 255px; ">Tenochtitlan </div></div>
-<div ><div data-toggle="tooltip" title="Itzcoatl" class="rennd" style="position: absolute; left:224px; top:187px; ">Itzcoatl </div></div>
-<div ><div data-toggle="tooltip" title="king" class="rennd" style="position: absolute; left:224px; top:210px; "><i>Rey </i></div></div>
-<div ><div data-toggle="tooltip" title="Axayaca" class="rennd" style="position: absolute; left:188px; top:265px; ">Axayaca </div></div>
-<div ><div data-toggle="tooltip" title="Cuauhtlatoa" class="rennd" style="position: absolute; left:310px; top: 190px; ">Cuauhtlatoa </div></div>
-<div ><div data-toggle="tooltip" title="Moquiuix" class="rennd" style="position: absolute; left:291px; top:290px; ">Moquiuix </div></div>
-<div ><div data-toggle="tooltip" title="Tlatelolco" class="rennd" style="position: absolute; left:445px; top: 248px; ">Tlatelolco </div></div>
-<div ><div data-toggle="tooltip" title="today part of Mexico" class="rennd" style="position: absolute; left:507px; top: 262px; "><i>Hoy de Mexico</i></div></div>
-<div ><div data-toggle="tooltip" title="type of costume with shell" class="rennd" style="position: absolute; left:428px; top: 155px;"><i>Genero de Vestido<br>con Concha</i></div></div>
-
+<div ><div data-toggle="tooltip" title="800 捆棉花" class="rennd" style="position: absolute; left:335px; top:65px; color:">ontzontlamamalli ychcatl</div></div>
+<div ><div data-toggle="tooltip" title="800 捆棉花" class="rennd" style="position: absolute; left:335px; top:83px; color:">800 Cargas de Algodon</div></div>
+<div ><div data-toggle="tooltip" title="400 条4英寻的" class="rennd" style="position: absolute; left:28px; top:462px; color:">centzontli nanmatl</div></div>
+<div ><div data-toggle="tooltip" title="400 条斗篷" class="rennd" style="position: absolute; left:28px; top:480px; color:">400 Mantas</div></div>
+<div ><div data-toggle="tooltip" title="20 包可可" class="rennd" style="position: absolute; left:164px; top:410px; color:">centecpatlamamalli cacauatl</div></div>
+<div ><div data-toggle="tooltip" title="1 包可可" class="rennd" style="position: absolute; left:164px; top:430px; color:">una Carga de Cacao</div></div>
+<div ><div data-toggle="tooltip" title="800 捆棉花" class="rennd" style="position: absolute; left:362px; top:382px; color:">ontzontlamamalli ychcatl </div></div>
+<div ><div data-toggle="tooltip" title="800 捆棉花" class="rennd" style="position: absolute; left:362px; top:400px; color:">800 Cargas de Algodon</div></div>
+<div ><div data-toggle="tooltip" title="这些是所有夸乌托彻科每80天要上贡的" class="rennd" style="position: absolute; left:185px; top:675px; color:">yxquich in itequiuh quauhtochcatl nappoualtica yn quicallaquiaya</div></div>
+<div ><div data-toggle="tooltip" title="这些是夸乌托彻科每80天要上贡的" class="rennd" style="position: absolute; left:185px; top:693px; color:">estto es lo que tributaban Cada ochenta dias los de Quautoxco</div></div>
+<div ><div data-toggle="tooltip" title="夸乌托彻科" class="rennd" style="position: absolute; left:28px; top:739px; color:">quahtochco</div></div>
+<div ><div data-toggle="tooltip" title="夸乌托彻科，和其他上贡城镇" class="rennd" style="position: absolute; left:87px; top:888px; color:">Quautoxco, y otros Pueblos tributarios</div></div>
+<div ><div data-toggle="tooltip" title="托托特兰" class="rennd" style="position: absolute; left:300px; top:791px; color:">tozttan</div></div>
+<div ><div data-toggle="tooltip" title="阿维利萨潘" class="rennd" style="position: absolute; left:532px; top:777px; color:">ahuiliçayan</div></div>
+<div ><div data-toggle="tooltip" title="阿维利萨潘" class="rennd" style="position: absolute; left:540px; top:862px; color:">Orizaba</div></div>
 
 
 </div>
@@ -250,35 +242,43 @@ function change(event){
 
 
 <div class="card">
-<h2>Altepetls:</h2>
+<h2>城邦：</h2>
 
 
 <div class="row" align="center">
-<div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="In the little hill of land"><img src="../../image/glyph/tlatelolco.png" width="70"><p>Tlatelolco</p><div>Tlatilōlco</div></div></div>
+<div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="在兔子树上                                  "><img src="../../image/glyph/quauhtochco.png" width="70"><p>
+                    夸乌托彻科         </p><div>Quauhtochco           <br>      Cuauhtochco                                                             </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="在美果榄树 (Tezontzapotl) 上                      "><img src="../../image/glyph/teuhzoltzapotlan.png" width="70"><p>
+					特乌佐尔萨波特兰  </p><div>    Teuhzoltzapotlan<br>     Teuhçoltzapotlan<br>Teuhçoltzapotla<br>Tzontzapotla<br>Teucoltzapolta            </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="有鸟的地方                                    "><img src="../../image/glyph/tototlan.png" width="70"><p>托托特兰          </p><div>    Tototlan                                                                     </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="在兔子头毛上                              "><img src="../../image/glyph/tochtzonco.png" width="70"><p>图彻综科        </p><div>   Tochtzonco  <br>    Tuchçonco<br>Tuchzonco                                                     </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="   在灌溉水渠中                         "><img src="../../image/glyph/ahuilizapan.png" width="70"><p>阿维利萨潘       </p><div>    Ahuilizapan <br>    Ahuilizpan                                                              </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="  土丘上有树的地方                               "><img src="../../image/glyph/quauhtetelco.png" width="70"><p>库奥特特尔科      </p><div>      Quauhtetelco                                                                   </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="与黑曜石有关的地方                       "><img src="../../image/glyph/izteyocan.png" width="70"><p>伊兹特尤坎         </p><div>   Izteyocan  <br>    Ytzteyocan                                                              </div></div></div>
 </div>
-
-
-
 
 </div>
 
 
 <div class="card">
-<h2>Tributos List:</h2>
-<div><h4 style="color:#d49e3b;">Constantly：</h4>
-<p style="padding-left:25px;">Repairs to the temple of Huitznahuac</p>
+<h2>贡品清单：</h2>
+
+
+<div><h4 style="color:#d49e3b;">每6个月：</h4>
+
+
+<p style="padding-left:25px;">400 条白色大斗篷，每个长4英寻</p>
+ 
 </div>
 
-<div><h4 style="color:#d49e3b;">Every 80 days: </h4>
-<p style="padding-left:25px;">40 large baskets of cacao ground with maize flour, called cacahuapinoli</p>
-<p style="padding-left:25px;">40 baskets of chia mixed with maize flour, called chianpinoli </p>
-<p style="padding-left:25px;">800 large white mantas </p>
+
+<div><h4 style="color:#d49e3b;">每年：</h4>
+<p style="padding-left:25px;">20 包可可</p>
+<p style="padding-left:25px;">1600 包白色棉花n</p>
+
 </div>
 
-<div><h4 style="color:#d49e3b;">Annually: </h4>
-<p style="padding-left:25px;">40 white cuextecatl warrior costumes and shield(s)</p>
-<p style="padding-left:25px;">40 yellow cuextecatl warrior costumes and shield(s)</p>
-</div>
+
 
 </div>
 
@@ -291,7 +291,7 @@ function change(event){
 <div  style="margin-top:50px;" align="center" >
 <a href="codex01.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">01</div></div></a>
 <a href="codex02.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">02</div></div></a>
-<a href="codex03.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div style="color:#d49e3b" class="step3">03</div></div></a>
+<a href="codex03.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">03</div></div></a>
 <a href="codex04.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">04</div></div></a>
 <a href="codex05.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">05</div></div></a>
 <a href="codex06.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">06</div></div></a>
@@ -314,7 +314,7 @@ function change(event){
 <a href="codex23.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">23</div></div></a>
 <a href="codex24.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">24</div></div></a>
 <a href="codex25.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">25</div></div></a>
-<a href="codex26.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">26</div></div></a>
+<a href="codex26.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div style="color:#d49e3b" class="step3">26</div></div></a>
 <a href="codex27.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">27</div></div></a>
 <a href="codex28.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">28</div></div></a>
 <a href="codex29.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">29</div></div></a>
@@ -324,7 +324,6 @@ function change(event){
 <div style="clear:both;"></div>
 </div>
 
-<div style="border-top: 1px solid #d49e3b;margin-top:50px;" class="mormaltext" >Note: A lot of content is missing on this page. The above tribute comes from Codex Mendoza.</div>
 
 
 <footer  class="footer1">

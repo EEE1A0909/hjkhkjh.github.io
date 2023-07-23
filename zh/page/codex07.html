@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>第 07 页 - 《贡品清单》  Matrícula de Tributos</title>
+<link rel="shortcut icon" href="../../image/sheld.ico"  type="image/x-icon" />
+<link rel="Bookmark" href="../../image/sheld.ico" />
+
+    <!-- Bootstrap core CSS -->
+<link href="../../style/bootstrap.min.css" rel="stylesheet">
+<link href="../../style/maincss.css" rel="stylesheet">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');</style>
+
+    <!-- Custom styles for this template -->
+
+<style>
+
+#all{
+	margin: 0 auto;
+	width: 1280px;
+	height: 920px;   <!-- hight -->
+}
+#small{margin-bottom:30px;
+	width: 960px;
+	height: 916px;        <!-- hight -->
+	position: relative;
+	float: left;
+	margin-left:-160px;margin-right:-160px;
+}
+#shadow{
+	width: 160px;
+	height: 160px;
+	background-color: black;
+	opacity: .2;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	cursor: move;
+	margin-top:120px;
+}
+#cover{
+	width:640px;
+	height:920px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	cursor: move;	
+	margin-top:120px;
+}
+#big{background-color: #222222;
+	width: 640px;
+	height: 640px; 
+	left: 0px!important;
+	position: relative;
+	z-index:1;
+	overflow: hidden;
+	display: none;border:1px solid #d49e3b;
+	
+}
+#big img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+</style>  
+
+ <script>
+window.onload=function(){
+	small=document.getElementById("small");
+	shadow=document.getElementById("shadow");
+	shadowWH=shadow.style.width?shadow.style.width:document.defaultView.getComputedStyle(shadow,null).width;
+	shadowWH=parseInt(shadowWH);
+	smallW=small.style.width?small.style.width:document.defaultView.getComputedStyle(small,null).width;
+	smallW=parseInt(smallW);
+	smallMT=small.style.marginTop?small.style.marginTop:document.defaultView.getComputedStyle(small,null).marginTop;
+	smallMT=parseInt(smallMT);
+	big=document.getElementById("big");
+	bigW=big.style.width?big.style.width:document.defaultView.getComputedStyle(big,null).width;
+	bigW=parseInt(bigW);
+	bigImg=big.getElementsByTagName("img")[0];
+	move();
+}
+function move(){
+	small.onmouseover=function(){
+		shadow.style.display="block";
+		big.style.display="block";
+		change(event);
+	}
+	small.onmouseout=function(){
+		shadow.style.display="none";
+		big.style.display="none";
+	}
+	small.onmousemove=function(){
+		change(event);
+	}
+}
+function change(event){
+	var evt=event?event:window.event;
+	var moveL=evt.layerX-shadowWH/2;
+	var moveT=evt.layerY-shadowWH/2;
+	
+	
+	if(moveL<0){
+		moveL=0;
+	}
+	if(moveL>smallW-shadowWH){
+		moveL=smallW-shadowWH;
+	}
+	
+	if(moveT<0){
+		moveT=0;
+	}
+	if(moveT>smallW-shadowWH){
+		moveT=smallW-shadowWH;
+	}
+	
+	shadow.style.left=moveL+"px";
+	shadow.style.top=moveT+"px";
+	/**
+	 * 图片放大
+	 */
+	big.style.left=50+"px";
+	big.style.top=smallMT+"px";
+	bigImgW=bigImg.offsetWidth;
+	var scale=bigImgW/bigW;
+	bigImg.style.top=-moveT*scale+"px";
+	bigImg.style.left=-moveL*scale+"px";
+}
+
+</script>  
+   
+   
+<script>
+	$(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+   
+   
+   
+   
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4694110216243855" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body class="d-flex h-100 text-center text-white bg-dark background1">
+  
+  
+<div class="cover-container d-flex w-100 h-100  mx-auto flex-column" >
+
+ <header class="mb-auto p-3 title1" >
+    <div >
+      <nav class="nav nav-masthead justify-content-center float-md-end" >
+        <a class="nav-link" href="../../">主页</a>
+        <a class="nav-link" href="../codex.html">手抄本</a>
+        <a class="nav-link" href="../map.html">地图</a>
+		<a class="nav-link" href="../data.html" >资料</a>
+	    <a class="nav-link" href="../about.html">关于</a>
+      </nav>
+    </div>
+
+</header> 
+
+
+<div align="center">
+<div style="width:1280px;" align="left">
+<div style="width:1280px;position: absolute;" align="left">
+
+<div style="width:1280px;height:120px;position: relative;">
+<div align="center">
+<h3>第 07  页 , 第 4 张正面</h3>
+<h1>瓦特佩克省的贡品</h1>
+</div>
+<div align="center" style="margin-top:-45px;margin-bottom:90px;">
+<a href="codex06.html" style="float:left;"><button type="button" class="btn btn-primary btn-lg">◀ 上一页</button></a>
+<a href="codex08.html" style="float:right;"><button type="button" class="btn btn-primary btn-lg">下一页 ▶</button></a>
+</div></div>
+
+
+<div align="center">
+<div class="codex1">
+
+
+<div id="all">
+			<div id="small">
+				<img src="../../image/codex/007.jpg" width="640"/>
+				<div id="shadow"></div>
+				<div id="cover"></div>	
+			</div>
+			<div id="big">
+				<img src="../../image/codex/007.jpg"/>
+			</div>
+			
+</div>
+
+</div>
+
+
+<div class="codex1">
+
+
+
+
+
+<div class="nounderlines" style="width: 640px;height:920px; float: none; border: none; clear: none;  position: relative;background:url(../../image/codex/a007.png); background-repeat: no-repeat;">
+
+
+<div ><div data-toggle="tooltip" title="8000" class="rennd" style="position: absolute; left:130px; top:30px; color:"> cenxiquipilli</div></div>
+<div ><div data-toggle="tooltip" title="阿特维利克        " class="rennd" style="position: absolute; left:400px; top:20px; color:"> atlhuelic             </div></div>
+<div ><div data-toggle="tooltip" title="阿米尔钦科       " class="rennd" style="position: absolute; left:462px; top:85px; color:"> amiltzinco             </div></div>
+<div ><div data-toggle="tooltip" title="阿特拉特拉乌坎      " class="rennd" style="position: absolute; left:547px; top:82px; color:"> atlatlauhca             </div></div>
+<div ><div data-toggle="tooltip" title="内波波阿尔科      " class="rennd" style="position: absolute; left:540px; top:113px; color:">nepopoualco             </div></div>
+<div ><div data-toggle="tooltip" title="特维兹科        " class="rennd" style="position: absolute; left:551px; top:173px; color:">tehuitzco             </div></div>
+<div ><div data-toggle="tooltip" title="提拉亚卡克         " class="rennd" style="position: absolute; left:551px; top:230px; color:">tlayacac             </div></div>
+<div ><div data-toggle="tooltip" title="阿约索恰潘       " class="rennd" style="position: absolute; left:544px; top:280px; color:">ayoxuchapa             </div></div>
+<div ><div data-toggle="tooltip" title="特克帕钦科       " class="rennd" style="position: absolute; left:596px; top:333px; color:">tecpacinco             </div></div>
+<div ><div data-toggle="tooltip" title="夏拉兹托克        " class="rennd" style="position: absolute; left:554px; top:379px; color:">xalloztoc             </div></div>
+<div ><div data-toggle="tooltip" title="特拉亚卡潘       " class="rennd" style="position: absolute; left:550px; top:433px; color:">tlayacapan             </div></div>
+<div ><div data-toggle="tooltip" title="亚卡皮彻特兰      " class="rennd" style="position: absolute; left:546px; top:483px; color:">yacapichtla             </div></div>
+<div ><div data-toggle="tooltip" title="亚乌特佩克        " class="rennd" style="position: absolute; left:551px; top:534px; color:">yauhtepec             </div></div>
+<div ><div data-toggle="tooltip" title="特波兹特兰        " class="rennd" style="position: absolute; left:557px; top:595px; color:">tepuztlan             </div></div>
+<div ><div data-toggle="tooltip" title="伊萨玛提特兰      " class="rennd" style="position: absolute; left:551px; top:665px; color:">yzamatitlan             </div></div>
+<div ><div data-toggle="tooltip" title="科亚卡尔科        " class="rennd" style="position: absolute; left:560px; top:724px; color:">couacalco             </div></div>
+<div ><div data-toggle="tooltip" title="特拉提萨潘       " class="rennd" style="position: absolute; left:560px; top:765px; color:">tlatizapan             </div></div>
+<div ><div data-toggle="tooltip" title="维兹兰          " class="rennd" style="position: absolute; left:565px; top:806px; color:">uicilan             </div></div>
+<div ><div data-toggle="tooltip" title="综潘科        " class="rennd" style="position: absolute; left:496px; top:800px; color:">tzompanco             </div></div>
+<div ><div data-toggle="tooltip" title="库乌尼特利斯科     " class="rennd" style="position: absolute; left:442px; top:812px; color:">cuauhitlixco             </div></div>
+<div ><div data-toggle="tooltip" title="奥林特佩克       " class="rennd" style="position: absolute; left:387px; top:800px; color:">ollintepec             </div></div>
+<div ><div data-toggle="tooltip" title="阿纳纳库约科     " class="rennd" style="position: absolute; left:307px; top:812px; color:">anene Cuilco             </div></div>
+<div ><div data-toggle="tooltip" title="阿维维潘       " class="rennd" style="position: absolute; left:243px; top:800px; color:">ahuehuepan             </div></div>
+<div ><div data-toggle="tooltip" title="夸乌特兰        " class="rennd" style="position: absolute; left:183px; top:812px; color:">quauhtlan             </div></div>
+<div ><div data-toggle="tooltip" title="霍奇米科钦科 " class="rennd" style="position: absolute; left:90px; top:800px; color:"> xochimilcatzinco             </div></div>
+<div ><div data-toggle="tooltip" title="瓦特佩克        " class="rennd" style="position: absolute; left:30px; top:783px; color:"> huaxtepec             </div></div>
+<div ><div data-toggle="tooltip" title=" 400 条棉质斗篷" class="rennd" style="position: absolute; left:1px; top:693px; color:">centzontli ichcatilmatli</div></div>
+<div ><div data-toggle="tooltip" title="400 条对角线分割的" class="rennd" style="position: absolute; left:112px; top:681px; color:">centzontli nacazminqui</div></div>
+<div ><div data-toggle="tooltip" title="400 条絮有棉花的" class="rennd" style="position: absolute; left:205px; top:693px; color:">centzontli cacamoliuhqui</div></div>
+<div ><div data-toggle="tooltip" title="400 条薄的" class="rennd" style="position: absolute; left:390px; top:685px; color:">ontzontli canuac</div></div>
+<div ><div data-toggle="tooltip" title="每 80 天，所有这些斗篷都会送到墨西哥" class="rennd" style="position: absolute; left:268px; top:635px; color:">inin mochi tilmatli nappoualtica<p>yn quicallaquia Mexico</div></div>
+<div ><div data-toggle="tooltip" title="400 条腰带" class="rennd" style="position: absolute; left:24px; top:575px; color:">centzonmaxtlatl</div></div>
+<div ><div data-toggle="tooltip" title="200 件维皮利，200 件裙子" class="rennd" style="position: absolute; left:120px; top:595px; color:">matlacpoualli uipilli<br>matlacpoualli cueitl</div></div>
+<div ><div data-toggle="tooltip" title="1200 大斗篷" class="rennd" style="position: absolute; left:330px; top:592px; color:">yetzontli quachtli </div></div>
+<div ><div data-toggle="tooltip" title="1 套狗女神式的" class="rennd" style="position: absolute; left:20px; top:416px; color:">centetl quaxolotl</div></div>
+<div ><div data-toggle="tooltip" title="20 套美洲豹式的" class="rennd" style="position: absolute; left:168px; top:426px; color:">centecpantli ocellotl</div></div>
+<div ><div data-toggle="tooltip" title="蓝色伞鸟(羽毛)星星魔鬼" class="rennd" style="position: absolute; left:326px; top:420px; color:">xiuhtototzitzimitl</div></div>
+<div ><div data-toggle="tooltip" title=" 20 个羽毛弯曲式的" class="rennd" style="position: absolute; left:150px; top:240px; color:">centecpantli momoyactlim</div></div>
+<div ><div data-toggle="tooltip" title="20 套黄色郊狼式的" class="rennd" style="position: absolute; left:280px; top:253px; color:">centecpantli tozcoyotl</div></div>
+<div ><div data-toggle="tooltip" title="下面的是服装，有的是从头穿到腰的，有的是从腰以下穿的" class="rennd" style="position: absolute; left:148px; top:188px; color:">los de abaxo son Vestiduras unas desde la cabeza<p>hasta la Zintura, otras de medio cuerpo abaxo</div></div>
+<div ><div data-toggle="tooltip" title="20 套绿色瓦斯特克式的" class="rennd" style="position: absolute; left:463px; top:200px; color:">centecpantli<br>xoxouhqui<br>cuextecatl</div></div>
+<div ><div data-toggle="tooltip" title=" 2000 个葫芦碗" class="rennd" style="position: absolute; left:172px; top:110px; color:">macuiltzontli xicalli</div></div>
+<div ><div data-toggle="tooltip" title="20 个爪钩式的
+" class="rennd" style="position: absolute; left:352px; top:109px; color:">centecpantli xopilli</div></div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+<h2>城邦：</h2>
+
+
+<div class="row" align="center">
+<div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在合欢树山上                "><img src="../../image/glyph/huaxtepec.png" width="70"><p>
+                    瓦特佩克         </p><div>                                                                         </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在霍奇米尔卡人这个小地方      "><img src="../../image/glyph/xochimilcazinco.png" width="70"><p>霍奇米科钦科   </p><div> Xochimilcacinco<br> Xochimilcaçinco<br>Xochimilcazinco<br>Xochimilcatzinco                       </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 有鹰的地方                                 "><img src="../../image/glyph/quauhtlan.png" width="70"><p>夸乌特兰         </p><div> Quauhtlan                                                                        </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在柏树和鼓之地                   "><img src="../../image/glyph/ahuehuepan.png" width="70"><p>阿维维潘        </p><div>    Ahuehuepan                                                          </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在有水流漩涡的地方           "><img src="../../image/glyph/anenecuilco.png" width="70"><p>  阿纳纳库约科     </p><div>        Anenecuilco                                                                 </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在地震的山上                  "><img src="../../image/glyph/olintepec.png" width="70"><p>奥林特佩克         </p><div>           Olintepec                                                              </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在树干上                         "><img src="../../image/glyph/quahuitlyxco.png" width="70"><p>库乌尼特利斯科      </p><div>Quahnitlyxco <br> Quahuitlyxco<br>Quahhuitlyxco                                             </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在骷髅架上                        "><img src="../../image/glyph/conpanco.png" width="70"><p>综潘科         </p><div> Tzonpanco<br> Çonpanco<br>Zonpanco     <br>Conpanco                                                 </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 有许多蜂鸟的地方                             "><img src="../../image/glyph/huizilan.png" width="70"><p>维兹兰         </p><div>Huizilan  <br> Huiçilan                                                               </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 白粉之地                              "><img src="../../image/glyph/tlaltizapan.png" width="70"><p> 特拉提萨潘      </p><div> Tlatizapan<br>  Tlaltiçapan<br>Tlaltiçapa    <br>Tlaltizapan                                             </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 屋子里有蛇的地方                       "><img src="../../image/glyph/coacalco.png" width="70"><p>科亚卡尔科          </p><div>    Coacalco                                                                     </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在木棉树附近                            "><img src="../../image/glyph/yzamatitla.png" width="70"><p>伊萨玛提特兰        </p><div> Yzamatitla<br> Izamatitla                                                             </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 有铜的地方                                   "><img src="../../image/glyph/tepuztlan.png" width="70"><p>特波兹特兰         </p><div>Tepuztlan <br> Tepoztlan<br>Tepotzla                                                     </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在苋菜花的山上                     "><img src="../../image/glyph/yauhtepec.png" width="70"><p>亚乌特佩克         </p><div>      Yauhtepec                                                                   </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="有尖鼻子的地方                           "><img src="../../image/glyph/yacapichtlan.png" width="70"><p>亚卡皮彻特兰       </p><div>Yacapichtla<br> Yacapichtlan                                                           </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在前面的山上                                          "><img src="../../image/glyph/tlayacapan.png" width="70"><p>特拉亚卡潘        </p><div>Tlayacapan <br> Tlayacapa                                                              </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在沙洞里                             "><img src="../../image/glyph/xaloztoc.png" width="70"><p>夏拉兹托克          </p><div>    Xaloztoc                                                                     </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在小燧石山上                             "><img src="../../image/glyph/tecpazinco.png" width="70"><p>特克帕钦科        </p><div>Tecpazinco <br> Tecpaçinco<br>Tecpatzinco                                                 </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 葫芦花和水的地方                "><img src="../../image/glyph/ayoxochapan.png" width="70"><p>阿约索恰潘       </p><div>Ayoxochapan <br> Ayoxochapa                                                             </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="在前面                                         "><img src="../../image/glyph/tlayacac.png" width="70"><p>提拉亚卡克          </p><div>    Tlayacac                                                                     </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在坚硬锋利的岩石之地                          "><img src="../../image/glyph/tehuizco.png" width="70"><p>特维兹科          </p><div>Tehuitzo <br> Tehuizco                                                               </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="在计算的地方                          "><img src="../../image/glyph/nepopoalco.png" width="70"><p>内波波阿尔科        </p><div>  Nepopoalco                                                                       </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 有红色水的地方                               "><img src="../../image/glyph/atlatlauhca.png" width="70"><p>阿特拉特拉乌坎       </p><div> Atlatlavaca<br> Atlatlavca<br>Atlatlauhca<br>Atlatlauca  <br>Atlatlauhuacan<br>Atlatlahucan                                    </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 水中有火鸡的地方                      "><img src="../../image/glyph/totolapa.png" width="70"><p>托托拉潘         </p><div> Totolapan<br> Totolapa<br>Totoloapa                                                     </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title=" 在一小片灌溉土地上                    "><img src="../../image/glyph/amilzinco.png" width="70"><p>阿米尔钦科         </p><div> Amilcinco<br> Amilçinco<br>Amiltzinco            <br>amilzinco                                       </div></div></div>
+                    <div class="col"><div class="col1 con1" data-toggle="tooltip" data-placement="top" title="  有宜人的饮用水的地方                     "><img src="../../image/glyph/atlhuelic.png" width="70"><p>阿特维利克         </p><div>      Atlhuelic                                                                   </div></div></div>
+
+
+
+
+</div>
+
+</div>
+
+
+<div class="card">
+<h2>贡品清单：</h2>
+<div><h4 style="color:#d49e3b;">每6个月：</h4>
+<p style="padding-left:25px;">400 条彩色腰带 </p>
+<p style="padding-left:25px;">400 条女式长袍和裙子                         </p>
+<p style="padding-left:25px;">2400 条白色大斗篷                           </p>
+<p style="padding-left:25px;">400 条带有彩色边缘的红色斗篷          </p>
+<p style="padding-left:25px;">400 对角线两边有不同风格图案的斗篷                    </p>
+<p style="padding-left:25px;">2000 个黄、红色的葫芦碗          </p>
+<p style="padding-left:25px;">8000 张原住民使用的树皮纸           </p>
+</div>
+
+<div><h4 style="color:#d49e3b;">每年： </h4>
+
+
+
+<p style="padding-left:25px;">20 套红色带有奎萨帕萨克特利 (cueçalpatzactli) 背部羽毛装饰的武士战袍和盾牌        </p>
+<p style="padding-left:25px;">20 套红色带有莫莫亚彻特利 (momoyactli) 背部羽毛装饰的武士战袍和盾牌      </p>
+<p style="padding-left:25px;">1 套黄色夸霍洛特尔 (quaxolotl) 武士战袍和盾牌                        </p>
+<p style="padding-left:25px;">1 套蓝色兹兹米特尔 (tzitzimitl) 武士战袍和盾牌                        </p>
+<p style="padding-left:25px;">1 套黄色郊狼 (coyote) 武士战袍和盾牌                        </p>
+<p style="padding-left:25px;">1 套蓝、黄色霍皮利 (xopilli) 武士战袍和盾牌              </p>
+<p style="padding-left:25px;">1 套黑、白色美洲豹 (ocelotl) 武士战袍和盾牌             </p>
+<p style="padding-left:25px;">1 套蓝色奎西特卡特尔 (cuextecatl) 武士战袍和盾牌                         </p>
+<p style="padding-left:25px;">1 箱玉米 </p>
+<p style="padding-left:25px;">1 箱苋菜                                                      </p>
+<p style="padding-left:25px;">1 箱豆子                                                         </p>
+<p style="padding-left:25px;">1 箱奇亚籽                                                          </p>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div  style="margin-top:50px;" align="center" >
+<a href="codex01.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">01</div></div></a>
+<a href="codex02.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">02</div></div></a>
+<a href="codex03.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">03</div></div></a>
+<a href="codex04.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">04</div></div></a>
+<a href="codex05.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">05</div></div></a>
+<a href="codex06.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">06</div></div></a>
+<a href="codex07.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div style="color:#d49e3b" class="step3">07</div></div></a>
+<a href="codex08.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">08</div></div></a>
+<a href="codex09.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">09</div></div></a>
+<a href="codex10.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">10</div></div></a>
+<a href="codex11.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">11</div></div></a>
+<a href="codex12.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">12</div></div></a>
+<a href="codex13.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">13</div></div></a>
+<a href="codex14.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">14</div></div></a>
+<a href="codex15.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">15</div></div></a>
+<a href="codex16.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">16</div></div></a>
+<a href="codex17.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">17</div></div></a>
+<a href="codex18.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">18</div></div></a>
+<a href="codex19.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">19</div></div></a>
+<a href="codex20.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">20</div></div></a>
+<a href="codex21.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">21</div></div></a>
+<a href="codex22.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">22</div></div></a>
+<a href="codex23.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">23</div></div></a>
+<a href="codex24.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">24</div></div></a>
+<a href="codex25.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">25</div></div></a>
+<a href="codex26.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">26</div></div></a>
+<a href="codex27.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">27</div></div></a>
+<a href="codex28.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">28</div></div></a>
+<a href="codex29.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">29</div></div></a>
+<a href="codex30.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">30</div></div></a>
+<a href="codex31.html"><div class="step1"><img src="../../image/cover/page1.png" width="34" ><div class="step3">31</div></div></a>
+<a href="codex32.html"><div class="step2"><img src="../../image/cover/page2.png" width="34" ><div class="step3">32</div></div></a>
+<div style="clear:both;"></div>
+</div>
+
+<footer  class="footer1">
+
+</footer >
+
+
+</div></div></div>
+
+
+
+</div>
+
+
+
+
+
+ 
+  
+  
+  
+  
+  
+
+    
+
+
+
+    
+  </body>
+</html>
