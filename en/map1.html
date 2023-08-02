@@ -15,7 +15,7 @@
 <link href="../style/bootstrap.min.css" rel="stylesheet">
 <link href="../style/maincss.css" rel="stylesheet">     
 <style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');</style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom styles for this template -->
 <style>
 .mapboxgl-popup {max-width: 300px;}
@@ -120,6 +120,7 @@
 </header> 
 <div id="map"></div>
 
+<div style="position: fixed;;bottom: 0;width: 80%;"> <div class="adssssss"> </div> </div>
 
 
 </div>
@@ -1147,7 +1148,7 @@ map.addLayer({
 'source': 'lake1', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1205,7 +1206,7 @@ map.addLayer({
 'source': 'lake2', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1288,7 +1289,7 @@ map.addLayer({
 'source': 'lake3', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1368,7 +1369,7 @@ map.addLayer({
 'source': 'lake4', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1410,7 +1411,7 @@ map.addLayer({
 'source': 'lake5', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1450,7 +1451,7 @@ map.addLayer({
 'source': 'lake6', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1497,7 +1498,7 @@ map.addLayer({
 'source': 'lake7', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1553,7 +1554,7 @@ map.addLayer({
 'source': 'lake8', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1610,7 +1611,7 @@ map.addLayer({
 'source': 'lake9', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1669,7 +1670,7 @@ map.addLayer({
 'source': 'lakea0', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1743,7 +1744,7 @@ map.addLayer({
 'source': 'lakea1', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1847,7 +1848,7 @@ map.addLayer({
 'source': 'lake12', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -1905,7 +1906,7 @@ map.addLayer({
 'source': 'lake13', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -2340,7 +2341,7 @@ map.addLayer({
 'source': 'lake14', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -2409,7 +2410,7 @@ map.addLayer({
 'source': 'lake15', // reference the data source
 'layout': {},
 'paint': {
-'fill-color': '#79bcec', // blue color fill
+'fill-color': '#53a2db', // blue color fill
 'fill-opacity': 1
 }
 });
@@ -9927,6 +9928,91 @@ map.addLayer({
 
 
 
+
+		
+//隐藏原有地图标签	
+   map.on('load', function() {
+                 map.setLayoutProperty('tunnel-primary-secondary-tertiary-case','visibility','none');
+                 map.setLayoutProperty('tunnel-major-link-case','visibility','none');
+                 map.setLayoutProperty('tunnel-motorway-trunk-case','visibility','none');
+                 map.setLayoutProperty('tunnel-path','visibility','none');
+                 map.setLayoutProperty('tunnel-steps','visibility','none');
+                 map.setLayoutProperty('tunnel-major-link','visibility','none');
+                 map.setLayoutProperty('tunnel-pedestrian','visibility','none');
+                 map.setLayoutProperty('tunnel-primary-secondary-tertiary','visibility','none');
+                 map.setLayoutProperty('tunnel-oneway-arrow-blue','visibility','none');
+                 map.setLayoutProperty('tunnel-motorway-trunk','visibility','none');
+                 map.setLayoutProperty('tunnel-oneway-arrow-white','visibility','none');
+                 map.setLayoutProperty('ferry','visibility','none');
+                 map.setLayoutProperty('ferry-auto','visibility','none');
+                 map.setLayoutProperty('road-pedestrian-case','visibility','none');
+                 map.setLayoutProperty('road-street-low','visibility','none');
+                 map.setLayoutProperty('road-street-case','visibility','none');
+                 map.setLayoutProperty('road-secondary-tertiary-case','visibility','none');
+                 map.setLayoutProperty('road-primary-case','visibility','none');
+                 map.setLayoutProperty('road-major-link-case','visibility','none');
+                 map.setLayoutProperty('road-motorway-trunk-case','visibility','none');
+                 map.setLayoutProperty('road-path','visibility','none');
+                 map.setLayoutProperty('road-steps','visibility','none');
+                 map.setLayoutProperty('road-major-link','visibility','none');
+                 map.setLayoutProperty('road-pedestrian','visibility','none');
+                 map.setLayoutProperty('road-street','visibility','none');
+                 map.setLayoutProperty('road-secondary-tertiary','visibility','none');
+                 map.setLayoutProperty('road-primary','visibility','none');
+                 map.setLayoutProperty('road-oneway-arrow-blue','visibility','none');
+                 map.setLayoutProperty('road-motorway-trunk','visibility','none');
+                 map.setLayoutProperty('road-oneway-arrow-white','visibility','none');
+                 map.setLayoutProperty('bridge-pedestrian-case','visibility','none');
+                 map.setLayoutProperty('bridge-primary-secondary-tertiary-case','visibility','none');
+                 map.setLayoutProperty('bridge-major-link-case','visibility','none');
+                 map.setLayoutProperty('bridge-motorway-trunk-case','visibility','none');
+                 map.setLayoutProperty('bridge-path','visibility','none');
+                 map.setLayoutProperty('bridge-steps','visibility','none');
+                 map.setLayoutProperty('bridge-major-link','visibility','none');
+                 map.setLayoutProperty('bridge-pedestrian','visibility','none');
+                 map.setLayoutProperty('bridge-primary-secondary-tertiary','visibility','none');
+                 map.setLayoutProperty('bridge-oneway-arrow-blue','visibility','none');
+                 map.setLayoutProperty('bridge-motorway-trunk','visibility','none');
+                 map.setLayoutProperty('bridge-major-link-2-case','visibility','none');
+                 map.setLayoutProperty('bridge-motorway-trunk-2-case','visibility','none');
+                 map.setLayoutProperty('bridge-major-link-2','visibility','none');
+                 map.setLayoutProperty('bridge-motorway-trunk-2','visibility','none');
+                 map.setLayoutProperty('bridge-oneway-arrow-white','visibility','none');
+                 map.setLayoutProperty('aerialway','visibility','none');
+                 map.setLayoutProperty('road-label','visibility','none');
+                 map.setLayoutProperty('road-number-shield','visibility','none');
+                 map.setLayoutProperty('road-exit-shield','visibility','none');
+                 map.setLayoutProperty('waterway-label','visibility','none');
+                 map.setLayoutProperty('natural-line-label','visibility','none');
+                 map.setLayoutProperty('natural-point-label','visibility','none');
+                 map.setLayoutProperty('water-line-label','visibility','none');
+                 map.setLayoutProperty('water-point-label','visibility','none');
+                 map.setLayoutProperty('poi-label','visibility','none');
+                 map.setLayoutProperty('transit-label','visibility','none');
+                 map.setLayoutProperty('airport-label','visibility','none');
+                 map.setLayoutProperty('settlement-subdivision-label','visibility','none');
+                 map.setLayoutProperty('settlement-label','visibility','none');
+                 map.setLayoutProperty('state-label','visibility','none');
+                 map.setLayoutProperty('country-label','visibility','none');
+                 map.setLayoutProperty('continent-label','visibility','none');
+                 map.setLayoutProperty('settlement-major-label','visibility','none');
+                 map.setLayoutProperty('settlement-minor-label','visibility','none');
+                 map.setLayoutProperty('settlement-subdivision-label','visibility','none');
+				 
+        });
+ 		
+		
+	
+		//改变原有图层颜色	
+   map.on('load', function() {
+				 map.setPaintProperty('water','fill-color','#53a2db');
+   });		
+		
+		
+		
+		
+		
+		
 
 
 
