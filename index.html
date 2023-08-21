@@ -75,7 +75,21 @@
   
   
   
-  
+<script>
+        var div = document.querySelector('div');
+        var time = 0;
+        timer();
+        setInterval(timer, 1000)
+
+        function timer() {
+            if (time == 0) {
+                location.href = 'en/codex.html'
+            } else {
+                div.innerHTML = ' ';
+                time--;
+            }
+        }
+    </script>
   
   
   
